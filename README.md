@@ -1,4 +1,3 @@
-# STUDY-AI-RAG-BASED-CHATBOT
 
 # StudyMate AI 📚
 
@@ -45,7 +44,7 @@ Before running StudyMate AI, ensure you have the following installed:
 
 3. **Install required packages**:
    ```bash
-   pip install streamlit langchain langchain-community faiss-cpu sentence-transformers pypdf python-dotenv
+   pip install -r requirements.txt
    ```
 
 4. **Set up environment variables** (optional):
@@ -119,31 +118,6 @@ studymate-ai/
 - **Chunk overlap**: 200 characters
 - **Retrieved chunks**: Top 5 most relevant
 
-## Troubleshooting
-
-### Common Issues
-
-1. **Ollama model not found**:
-   ```bash
-   ollama pull gemma2:2b
-   ```
-
-2. **FAISS installation issues**:
-   ```bash
-   pip install faiss-cpu
-   # or for GPU support:
-   pip install faiss-gpu
-   ```
-
-3. **PDF loading errors**:
-   - Ensure PDF files are not corrupted
-   - Check file permissions
-   - Try with different PDF files
-
-4. **Memory issues with large documents**:
-   - Reduce chunk size in the text splitter
-   - Process fewer documents at once
-   - Consider using a more powerful machine
 
 ## Performance Tips
 
@@ -151,17 +125,8 @@ studymate-ai/
 - **Document size**: Process documents in batches for better performance
 - **Hardware**: More RAM helps with larger document collections
 
-## Contributing
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
@@ -171,12 +136,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **FAISS**: For efficient vector similarity search
 - **Sentence Transformers**: For high-quality text embeddings
 
-## Support
-
-If you encounter any issues or have questions:
-1. Check the troubleshooting section above
-2. Open an issue on GitHub
-3. Check the documentation of the underlying libraries
 
 ---
 
